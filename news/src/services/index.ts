@@ -1,9 +1,9 @@
 import axios from "@/lib/http";
-import { NAV_TYPES } from "@/typings/common";
+import { IPostData, NAV_TYPES } from "@/typings";
 
 function getNewsList<T>(options: IPostData) {
   const { type, pageNum, count } = options;
-  return axios.post<T, T>('/api/news_list'. {
+  return axios.post<T, T>('/api/news_list', {
     type,
     pageNum,
     count
@@ -12,4 +12,8 @@ function getNewsList<T>(options: IPostData) {
   }).catch((err) => {
     throw new Error('Request failed:' + err)
   })
+}
+
+export {
+  getNewsList
 }
