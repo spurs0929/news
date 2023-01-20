@@ -1,5 +1,6 @@
 import axios, { AxiosRequestConfig, AxiosResponse } from "axios";
 
+// 基礎域名
 axios.defaults.baseURL = 'http://localhost:7001';
 
 // 設置請求攔截器
