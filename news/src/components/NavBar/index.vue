@@ -47,7 +47,7 @@ export default defineComponent({
     // 設置目前index值
     const setCurIdx = (curIdx: number, type: string): void => {
       state.curIdx = curIdx;
-      // emit('SET_CURRENT_TYPE', type);
+      emit('setCurrentType', type);
     }
 
     return {
