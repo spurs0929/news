@@ -29,5 +29,9 @@ export default {
     }).catch((err: any) => {
       throw err;
     });
+  },
+  // 修改新聞類型
+  [actionTypes.SET_CURRENT_TYPE]({ commit }: { commit: Commit}, type: NAV_TYPES) {
+    commit(actionTypes.SET_CURRENT_TYPE, type);
   }
 }
