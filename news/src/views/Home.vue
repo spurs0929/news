@@ -1,11 +1,23 @@
 <template>
   <div class="container">
-    首頁
+    <nav-bar></nav-bar>
   </div>
 </template>
 
-<script>
-  export default {
-    name: 'Home'
-  }
+<script lang="ts">
+import { defineComponent } from "vue"
+import { Store, useStore } from 'vuex';
+import { useNewsList } from '../compositions';
+import NavBar from '../components/NavBar/index.vue';
+
+  export default defineComponent({
+    name: 'Home',
+    components: {
+      NavBar
+    },
+    setup() {
+      const store: Store<any> = useStore();
+      const newsList = useNewsList(store);
+    }
+  })
 </script>
