@@ -1,5 +1,6 @@
-import { IHeaderInfo, NAV_TYPES, IPostData } from "./common";
+import { IHeaderInfo, NAV_TYPES, IPostData, IRetNewsData } from "./common";
 import { IHomeState, INewsInfo, INewsList, IDetailState } from "./store";
+import { INavBar } from "./home";
 
 export {
   IHeaderInfo,
@@ -8,5 +9,7 @@ export {
   IHomeState,
   INewsInfo,
   INewsList,
-  IDetailState
+  IDetailState,
+  IRetNewsData,
+  INavBar
 }

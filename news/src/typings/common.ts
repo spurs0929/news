@@ -1,3 +1,5 @@
+import { INewsInfo } from "./store"
+
 // 路由對應的Header設置
 interface IHeaderInfo {
   name: string,
@@ -31,8 +33,15 @@ interface IPostData {
   count: number
 }
 
+// 返回的資料類型
+interface IRetNewsData {
+  data: INewsInfo[] | null,
+  hasMore: boolean
+}
+
 export {
   IHeaderInfo,
   NAV_TYPES,
-  IPostData
+  IPostData,
+  IRetNewsData
 }
