@@ -1,7 +1,10 @@
-import { useRouteInfo } from "./common";
-import { useNewsList } from "./home";
+import { useRouteInfo, useImgShow, useLoadingMore } from "./common";
+import { useNewsList, useNavType } from "./home";
 
 export {
   useRouteInfo,
-  useNewsList
+  useNewsList,
+  useNavType,
+  useImgShow,
+  useLoadingMore
 }
