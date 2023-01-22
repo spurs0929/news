@@ -130,6 +130,10 @@ export default defineComponent({
       }
     }
 
+    h1 {
+      font-size: .16rem; 
+    }
+
     &.type-1 {
       .main {
         display: flex;
