@@ -39,7 +39,7 @@ function useLoadingMore(store: Store<IGlobalState>, module: string, actionType: 
 
   // 型別斷言
   switch(module) {
-    case 'homw': 
+    case 'home': 
       state = store.state.home as IHomeState;
       break;
     default: 
