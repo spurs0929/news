@@ -19,7 +19,7 @@ interface IPageData<T> {
 }
 
 interface INewsData {
-  uniqueKey: string,
+  uniquekey: string,
   title: string,
   data: string,
   category: string,
