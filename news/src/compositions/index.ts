@@ -1,6 +1,7 @@
 import { useRouteInfo, useImgShow, useLoadingMore } from "./common";
 import { useNewsList, useNavType } from "./home";
-import { useDetailInfo } from "./detail";
+import { useDetailInfo, useFollowedCheck, useNewsFollow } from "./detail";
+import { useFollowedList } from "./mynews";
 
 export {
   useRouteInfo,
@@ -8,5 +9,8 @@ export {
   useNavType,
   useImgShow,
   useLoadingMore,
-  useDetailInfo
+  useDetailInfo,
+  useFollowedCheck,
+  useNewsFollow,
+  useFollowedList
 }
