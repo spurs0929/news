@@ -11,7 +11,7 @@ interface INewsList {
 
 // 每條news的類型
 interface INewsInfo {
-  uniqueKey: string,
+  uniquekey: string,
   title: string,
   data: string,
   category: string,
