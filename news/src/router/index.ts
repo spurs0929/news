@@ -67,7 +67,7 @@ const routes: Array<RouteRecordRaw> = [
     component: Home
   },
   {
-    path: '/detail',
+    path: '/detail/:uniquekey/:from',
     name: 'Detail',
     component: () => import(/*webpackChunkName: "detail"*/'../views/Detail.vue')
   },
